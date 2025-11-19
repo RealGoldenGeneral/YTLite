@@ -196,9 +196,9 @@ jobs:
 
       - name: Clone YTUHD
         if: ${{ inputs.enable_ytuhd }}
-          run: |
-            cd ${{ github.workspace }}
-            git clone --quiet --depth=1 https://github.com/Tonwalter888/YTUHD.git
+        run: |
+          cd ${{ github.workspace }}
+          git clone --quiet --depth=1 https://github.com/Tonwalter888/YTUHD.git
 
       - name: Clone Return-YouTube-Dislikes
         if: ${{ inputs.enable_ryd }}
